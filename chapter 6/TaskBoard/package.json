@@ -1,0 +1,19 @@
+{
+  "name": "chapter-6-taskboard",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Chapter 6 companion code: TaskBoard, debugged and refactored across the chapter's sections",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
+    "vite": "^5.0.0"
+  }
+}
