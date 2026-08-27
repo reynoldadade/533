@@ -1,0 +1,135 @@
+/*
+  Same base look as ecommerce-app-legacy, extended just enough to back
+  the new components/ui/ library (BaseButton.vue, BaseCard.vue). This
+  chapter doesn't specify a design-token system, so this stays a small,
+  plain stylesheet rather than inventing one.
+*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f8;
+  color: #1a1a1a;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+nav {
+  background: #1e1e2e;
+  padding: 12px 20px;
+  display: flex;
+  gap: 16px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a.router-link-exact-active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.filters-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.filters-bar select {
+  padding: 6px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+/* components/ui/BaseCard.vue */
+.base-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 12px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.product-card h3 {
+  font-size: 15px;
+  margin: 8px 0 4px;
+}
+
+.product-card p {
+  font-size: 13px;
+  color: #555;
+  margin: 0 0 8px;
+}
+
+.product-card .price {
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* components/ui/BaseButton.vue */
+.base-button {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.base-button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+.base-button.base-button--danger {
+  background: #dc2626;
+}
+
+.state-message {
+  color: #555;
+  font-size: 14px;
+}
+
+.state-message.state-message--error {
+  color: #b91c1c;
+}
+
+.cart-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.cart-total {
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: bold;
+}
