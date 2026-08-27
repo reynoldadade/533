@@ -1,0 +1,20 @@
+{
+  "name": "ecommerce-app-legacy",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "Chapter 7 reference: the pre-audit ShopVue, reverse engineered to match the chapter's described problems",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.5.0",
+    "vue-router": "^4.6.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
+    "vite": "^5.0.0"
+  }
+}
