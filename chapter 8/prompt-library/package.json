@@ -1,0 +1,10 @@
+{
+  "name": "prompt-library",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "Chapter 8: the reusable prompt templates and loader script, extracted from the chapter text into real files.",
+  "scripts": {
+    "test": "node --test scripts/load-template.test.js"
+  }
+}
